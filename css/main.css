@@ -43,3 +43,8 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.conatainer {
+  margin: 60px auto;
+  width: 70%;
+}
