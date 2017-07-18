@@ -1,8 +1,127 @@
-.bg {
-  height:100vh;
-  width: 100vw;
-  background-image: url("../assets/JoshKingswoodCV.png");
-  background-repeat: no-repeat;
 
-  background-size: cover;
+body {
+  font-family: Raleway;
+  font-weight: light;
+  width: 100vw;
+  background-color: #5d5d5d;
+  margin: 0;
+  padding: 0;
+}
+
+#centralcolumn {
+    width: 595px;
+    height: 841px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    box-shadow: 0px 0px 5px #222222;
+}
+
+#cv-head
+{
+  background-color: #2a293a;
+  position: relative;
+  color: white;
+  padding: 0;
+  height: 150px;
+}
+
+#cv-head:after
+{
+  content: "";
+  position: absolute;
+  display: table;
+  top: 100%;
+	width: 0;
+	height: 0;
+	border-top: 13px solid #2a293a;
+	border-right: 595px solid transparent;
+}
+
+#title {
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 2.2em;
+}
+
+#title:before
+{
+  content:"";
+  width:210px;
+  height:.5px;
+  background:#cccccc;
+  position:absolute;
+  bottom:80px;
+  left:80px;
+}
+
+#title:after
+{
+  content:"";
+  width:210px;
+  height:.5px;
+  background:#cccccc;
+  position:absolute;
+  bottom:80px;
+  right:80px;
+}
+
+#shortdesc
+{
+  margin:0;
+  padding-left:80px;
+  padding-right:80px;
+  font-family: gill sans mt;
+  font-size: .85em;
+  font-weight: 50;
+  text-align: justify;
+  position: relative;
+}
+
+#shortdesc:before
+{
+  content:"";
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: -13px;
+  left: calc(50% - 1px);
+  transform: rotate(45deg);
+}
+
+.main-body
+{
+  font-family: Gill Sans MT;
+  font-weight: 200;
+  font-size: 0.8em;
+  margin: 0;
+  padding:0;
+  display: -webit-flex;
+  display: flex;
+}
+
+.main-text
+{
+margin:0;
+padding: 10px 40px;
+}
+
+.side-bar
+{
+flex: 0 0 197px;
+float: right;
+background-color: #616179;
+padding:0;
+margin:0;
+height: 691px;
+background-image: url("../assets/repeat.svg");
+}
+.side-bar:after{
+
 }

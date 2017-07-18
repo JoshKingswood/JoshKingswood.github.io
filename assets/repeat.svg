@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="197.645px" height="41.052px" viewBox="0 0 197.645 41.052" enable-background="new 0 0 197.645 41.052"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="197.645" height="41.052"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<rect fill="#62617A" width="197.645" height="41.052"/>
+	</g>
+	<g opacity="0.3" clip-path="url(#SVGID_2_)">
+		<g>
+			<circle fill="#FFFFFF" cx="6.3" cy="7.062" r="13.47"/>
+			<circle fill="#FFFFFF" cx="47.36" cy="7.061" r="13.469"/>
+			<circle fill="#FFFFFF" cx="88.423" cy="7.061" r="13.469"/>
+			<circle fill="#FFFFFF" cx="129.483" cy="7.061" r="13.469"/>
+			<circle fill="#FFFFFF" cx="170.546" cy="7.061" r="13.469"/>
+			<circle fill="#FFFFFF" cx="27.163" cy="27.592" r="13.469"/>
+			<circle fill="#FFFFFF" cx="6.3" cy="48.122" r="13.47"/>
+			<circle fill="#FFFFFF" cx="68.225" cy="27.59" r="13.47"/>
+			<circle fill="#FFFFFF" cx="47.36" cy="48.121" r="13.469"/>
+			<circle fill="#FFFFFF" cx="109.286" cy="27.59" r="13.469"/>
+			<circle fill="#FFFFFF" cx="88.423" cy="48.121" r="13.469"/>
+			<circle fill="#FFFFFF" cx="150.348" cy="27.59" r="13.47"/>
+			<circle fill="#FFFFFF" cx="129.483" cy="48.121" r="13.469"/>
+			<circle fill="#FFFFFF" cx="191.409" cy="27.59" r="13.469"/>
+			<circle fill="#FFFFFF" cx="170.546" cy="48.121" r="13.469"/>
+			<path fill="#FFFFFF" d="M170.546,20.529c7.438,0,13.469-6.029,13.469-13.471c0-7.436-6.031-13.469-13.469-13.469
+				c-7.439,0-13.471,6.033-13.471,13.469C157.075,14.5,163.106,20.529,170.546,20.529z"/>
+		</g>
+	</g>
+</g>
+</svg>
