@@ -3,24 +3,43 @@ html, body {
     padding: 0;
 }
 
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    list-style-type: none;
+    font-family: Gill Sans MT;
     padding: 0px;
-    list-style: none;
+    margin: 10px 0px;
+    text-align: center;
     font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
+  }
+nav ul li, footer ul li{
+    display: inline-block;
     margin-right: 20px;
 }
-
 a {
     text-decoration: none;
     color: #999;
 }
 a:hover {
     text-decoration: underline;
+    color:#000000;
 }
+
+.subnav ul {
+  list-style-type: none;
+  font-family: Gill Sans MT;
+  padding: 0px;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.subnav ul li {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
