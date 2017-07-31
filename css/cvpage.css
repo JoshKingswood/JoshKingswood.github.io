@@ -1,22 +1,23 @@
 
 body {
   width: 100vw;
-  background-color: #5d5d5d;
+  background-color: #666666;
   margin: 0;
   padding: 0;
 }
 
 nav {
   position: sticky;
-  top:10px;
+  top:0px;
   z-index: 20;
+  background-color:#666666;
 }
 
 nav ul {
     list-style-type: none;
     font-family: Gill Sans MT;
     padding: 0px;
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0;
     text-align: center;
     font-weight: bold;
   }
@@ -35,7 +36,7 @@ nav ul li a:hover {
 
 #centralcolumn {
     width: 595px;
-    height: 841px;
+    height: 850px;
     background-color: white;
     margin: 0 auto;
     margin-top: 50px;
@@ -154,9 +155,9 @@ float: right;
 background-color: #616179;
 padding:0;
 margin:0;
-height: 691px;
+height: 700px;
 /*background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0));*/
-background-image: url("../assets/repeat.svg");
+background-image: url("../assets/repeat-blurred.svg");
 position: relative;
 }
 
@@ -167,14 +168,18 @@ position: relative;
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(97,97,121,1), rgba(0,0,0,0));
+  background:
+    linear-gradient(
+      to top,
+      rgba(97,97,121,.9)50%,
+      rgba(0,0,0,0));
 }
 
 h2
 {
-  color:red;
+  color:#666666;
   padding:0;
-  margin: 0;
+  margin: 10px 0 0 0;
   font-family: Gill Sans MT;
   text-align: center;
   font-size: 1.2em;
@@ -182,26 +187,60 @@ h2
   position: relative;
 }
 
+h3
+{
+  color:#666666;
+  padding:0;
+  margin: 10px 0 0 0;
+  font-family: Gill Sans MT;
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h4
+{
+  color:#666666;
+  padding:0;
+  margin: 10px 0 0 0;
+  font-family: Gill Sans MT;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 8px;
+}
+h5
+{
+  color: #666666;
+  padding:0;
+  margin: 0;
+  font-family: Gill Sans MT;
+  font-style: italic;
+  font-size: .95em;
+  font-weight: 500;
+}
+
+
 .section__header:before
 {
   content:"";
-  width:60px;
+  width:50px;
   height:1px;
-  background:red;
+  background:#666666;
   position: absolute;
   top: 11px;
-  left: 0;
+  left: 10px;
 }
 
 .section__header:after
 {
   content:"";
-  width:60px;
+  width:50px;
   height: 1px;
-  background:red;
+  background:#666666;
   position: absolute;
   top: 11px;
-  right: 0;
+  right: 10px;
 }
 
 .section__header--interests,
@@ -223,46 +262,82 @@ h2
   color: #ffffff;
 }
 
-
-h3
-{
-  padding:0;
-  margin: 0;
-  font-family: Gill Sans MT;
-  color: blue;
-}
-
-h4
-{
-  padding:0;
-  margin: 0;
-  font-family: Gill Sans MT;
-  color: magenta;
-}
-h5
-{
-  padding:0;
-  margin: 0;
-  font-family: Gill Sans MT;
-  color: yellow;
-}
 .para{
   padding:0;
   margin: 0;
   font-family: Gill Sans MT;
-  color: black;
+  color:#666666;
+  font-weight: 100;
+  font-size: 0.95em;
+  text-align: justify;
 }
 
 .side-bar > p
 {
-  padding: 30px;
+  padding: 0 30px;
   position: relative;
 }
 
 .side-bar > ul
 {
   position: relative;
+  list-style: none;
+  padding: 10px 10px 10px 10px;
 }
+
+.side-bar > ul > li
+{
+  padding: 3px 3px 3px 3px;
+  margin: 0;
+}
+
+.side-bar > ul > li >a
+{
+  text-decoration: none;
+  color: #fff;
+}
+.side-bar > ul > li > a:hover
+{
+  color: #fff;
+  text-decoration: underline;
+}
+.side-bar > ul > li > img
+{
+  margin: 2px;
+  padding:0;
+}
+
+.units
+{
+  font-family: Gill Sans MT;
+  color:#666666;
+  font-weight: 100;
+  text-align: center;
+  font-weight: 100;
+  font-size: .85em;
+  line-height: 190%
+}
+
+
+
+.js,.ht,.css,.ai,.ae,.ps
+{
+  padding:0;
+  margin:4px;
+}
+
+.tool-icons
+{
+  margin:20px 0 0 0;
+  padding:5px;
+  height: 150px;
+}
+
+.section__list--contact img
+{
+  vertical-align: bottom;
+}
+
 
 /*
     Static Position: Browser's dedault positioning. Follows the flow of content.
