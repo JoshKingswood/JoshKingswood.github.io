@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+/*  font-family: Gill Sans MT; */
+
 body {
   width: 100vw;
   background-color: #666666;
@@ -15,7 +19,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    font-family: Gill Sans MT;
+    font-family: Roboto;
     padding: 0px;
     margin: 0px 0px 10px 0;
     text-align: center;
@@ -36,7 +40,7 @@ nav ul li a:hover {
 
 #centralcolumn {
     width: 595px;
-    height: 850px;
+    height: 865px;
     background-color: white;
     margin: 0 auto;
     margin-top: 50px;
@@ -107,7 +111,7 @@ nav ul li a:hover {
   margin:0;
   padding-left:80px;
   padding-right:80px;
-  font-family: gill sans mt;
+  font-family: Roboto;
   font-size: .85em;
   font-weight: 50;
   text-align: justify;
@@ -128,7 +132,7 @@ nav ul li a:hover {
 
 .main-body
 {
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   font-weight: 200;
   font-size: 0.8em;
   margin: 0;
@@ -141,21 +145,21 @@ nav ul li a:hover {
 {
 margin:0;
 padding: 10px 40px;
-font-family: Gill Sans MT;
+font-family: Roboto;
 font-weight: 100;
 }
 
 .side-bar
 {
 color: white;
-font-family: Gill Sans MT;
+font-family: Roboto;
 font-weight: 100;
 flex: 0 0 197px;
 float: right;
 background-color: #616179;
 padding:0;
 margin:0;
-height: 700px;
+height: 715px;
 /*background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0));*/
 background-image: url("../assets/repeat-blurred.svg");
 position: relative;
@@ -180,7 +184,7 @@ h2
   color:#666666;
   padding:0;
   margin: 10px 0 0 0;
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
@@ -192,7 +196,7 @@ h3
   color:#666666;
   padding:0;
   margin: 10px 0 0 0;
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   font-style: italic;
   font-size: 1.1em;
   font-weight: bold;
@@ -203,7 +207,7 @@ h4
   color:#666666;
   padding:0;
   margin: 10px 0 0 0;
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   font-weight: bold;
   font-style: italic;
   font-size: 1em;
@@ -214,7 +218,7 @@ h5
   color: #666666;
   padding:0;
   margin: 0;
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   font-style: italic;
   font-size: .95em;
   font-weight: 500;
@@ -265,7 +269,7 @@ h5
 .para{
   padding:0;
   margin: 0;
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   color:#666666;
   font-weight: 100;
   font-size: 0.95em;
@@ -309,7 +313,7 @@ h5
 
 .units
 {
-  font-family: Gill Sans MT;
+  font-family: Roboto;
   color:#666666;
   font-weight: 100;
   text-align: center;
