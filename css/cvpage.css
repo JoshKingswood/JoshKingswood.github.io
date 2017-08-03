@@ -6,7 +6,6 @@
 
 body {
   width: 100vw;
-  background-color: #666666;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -43,13 +42,13 @@ nav ul li a:hover {
 #centralcolumn {
     width: 595px;
     height: 865px;
-    background-color: white;
+    background-color: #F6F5FF;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0;
     /*box-shadow: 10px 10px 5px #4c4c4c;*/
-    box-shadow: 0px 0px 20px 2px #4c4c4c;
+    box-shadow: 0px 0px 15px 1px #4c4c4c;
 
 }
 
