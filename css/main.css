@@ -1,69 +1,434 @@
-html, body {
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Rubik:100,400,400i,700,700i');
+  /*/////////         CONTAINER               /////////*/
+  body
+  {
+    font-family: Rubik;
+    width: 100vw;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-}
+  }
+  .right-button
+  {
+    padding:0;
+    margin:0;
+    position: fixed;
+    right:0px;
+    height: 200px;
+    width: 50px;
+    background-color: red;
+    top: 50%;
+    z-index: 10;
+  }
+  .left-button
+  {
+   padding:0;
+    margin:0;
+    position: fixed;
+    left:0px;
+    height: 200px;
+    width: 50px;
+    background-color: red;
+    top: 50%;
+    z-index: 10;
+  }
+  .carousel
+  {
+    position: relative;
 
+  }
+  .page
+  {
+      margin: 0;
+      padding: 0;
+      width: 600px;
+      box-shadow: 0px 0px 20px 2px #4c4c4c;
+      position: fixed;
+      transition: left 0.3s, right 0.3s;
 
-nav ul, footer ul {
-    list-style-type: none;
-    font-family: Gill Sans MT;
-    padding: 0px;
-    margin: 10px 0px;
+      overflow: hidden;
+  }
+  #cv
+  {
+      left: calc(50vw - 300px);
+      background-color: #F6F5FF;
+      height: 750px;
+
+      overflow: hidden;
+  }
+  #design
+  {
+     left: calc(150vw - 300px);
+       background-color: #F6F5FF;
+  }
+  #illustration
+  {
+     left: calc(250vw - 300px);
+       background-color: #F6F5FF;
+  }
+  #writing
+  {
+     left: calc(350vw - 300px);
+       background-color: #F6F5FF;
+  }
+  ::-webkit-scrollbar
+  {
+      width: 0px;  /* remove scrollbar space */
+  }
+  /*/////////         end of CONTAINER         ////////*/
+
+  /*//////////        HEADER + FOOTER          ////////*/
+  .banner
+  {
+    margin:0;
+    padding:0;
+    height: 140px;
+    width: 100vw;
+    background-color: #2a293a;
+    z-index: 30;
+    position: sticky;
+  }
+  .headblock
+  {
+    width: 600px;
+    padding: auto;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+  }
+  h1
+  {
+    font-weight: lighter;
+    font-family: Raleway;
     text-align: center;
+  }
+  #name
+  {
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 2.2em;
+    font-family: Raleway;
+    font-weight: light;
+  }
+  #name:before
+  {
+    content:"";
+    width:210px;
+    height:.5px;
+    background: #cccccc;
+    position: absolute;
+    bottom:70px;
+    left:80px;
+  }
+  #name:after
+  {
+    content:"";
+    width:210px;
+    height:.5px;
+    background:#cccccc;
+    position:absolute;
+    bottom:70px;
+    right:80px;
+  }
+  #shortdesc
+  {
+    margin:0;
+    padding: 0px 66px;
+    font-family: Rubik;
+    font-size: .85em;
+    font-weight: 50;
+    text-align: justify;
+    position: relative;
+  }
+  #shortdesc:before
+  {
+    content:"";
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    left: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+
+  .footer
+  {
+    margin:0;
+    padding:0;
+    background-color: #2a293a;
+    position: sticky;
+    color: white;
+    top: 100vh;
+    display: block;
+    overflow: hidden;
+    font-family: Rubik;
+    font-size: .8em;
+  }
+  .footer ul
+  {
+    margin:0;
+    padding:0;
+    list-style: none;
+    list-style-type: none;
+    display: block;
+    text-align: center;
+  }
+  .footer ul li
+  {
+    margin:0;
+    padding: 2 4px;
+    display:inline-block;
+  }
+  .footer ul li:hover
+  {
+      background-color: #ffffff;
+      color: #2a293a;
+  }
+  /*//////////        end of HEADER + FOOTER  ////////*/
+
+  /*//////////        CV                     /////////*/
+  .cv-body
+  {
+    font-family: Rubik;
+    font-weight: 200;
+    font-size: 0.8em;
+    margin: 0;
+    padding:0;
+    display: -webit-flex;
+    display: flex;
+    position: absolute;
+    width: 600px;
+    overflow: auto;
+    height: calc(100vh - 140px);
+  }
+  .main-text
+  {
+    margin:0;
+    padding: 10px 40px 0px 40px;
+    font-family: Rubik;
+    font-weight: 100;
+  }
+  .side-bar
+  {
+    color: white;
+    font-family: Rubik;
+    font-weight: 100;
+    flex: 0 0 197px;
+    float: right;
+    background-color: #616179;
+    padding:0;
+    margin:0;
+    height: 750px;
+    background-image: url("../assets/repeat-blurred.svg");
+    position: relative;
+  }
+  .side-bar:before
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:
+      linear-gradient(
+        to top,
+        rgba(97,97,121,.9)50%,
+        rgba(0,0,0,0));
+  }
+  h2
+  {
+    color:#666666;
+    padding:0;
+    margin: 10px 0 0 0;
+    font-family: Rubik;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+  }
+  h3
+  {
+    color:#666666;
+    padding:0;
+    margin: 10px 0 0 0;
+    font-family: Rubik;
+    font-style: italic;
+    font-size: 1.1em;
     font-weight: bold;
   }
-nav ul li, footer ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-    color:#000000;
-}
-
-.subnav ul {
-  list-style-type: none;
-  font-family: Gill Sans MT;
-  padding: 0px;
-  margin: 10px 0px;
-  text-align: center;
-  font-weight: bold;
-}
-.subnav ul li {
-  display: inline-block;
-  margin-right: 20px;
-
-}
-
-
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
-
-ul.posts li {
+  h4
+  {
+    color:#666666;
+    padding:0;
+    margin: 10px 0 0 0;
+    font-family: Rubik;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  h5
+  {
+    color: #666666;
+    padding:0;
+    margin: 0;
+    font-family: Rubik;
+    font-style: italic;
+    font-size: .95em;
+    font-weight: 500;
+  }
+  .section__header:before
+  {
+    content:"";
+    width:50px;
+    height:1px;
+    background:#666666;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+  }
+  .section__header:after
+  {
+    content:"";
+    width:50px;
+    height: 1px;
+    background:#666666;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+  }
+  .section__header--interests,
+  .section__header--contact
+  {
+    color: #ffffff;
+  }
+  .section__header--interests:before,
+  .section__header--interests:after,
+  .section__header--contact:before,
+  .section__header--contact:after
+  {
+    background: #ffffff;
+  }
+  .section__text--interests
+  {
+    font-size: .9em;
+    text-align: justify;
+  }
+  .section__header--interests
+  {
+    color: #ffffff;
+  }
+  .para
+  {
+    padding:0;
+    margin: 0;
+    font-family: Rubik;
+    color:#666666;
+    font-weight: 100;
+    font-size: 0.95em;
+    text-align: justify;
+  }
+  .side-bar > p
+  {
+    padding: 0 30px;
+    position: relative;
+  }
+  .side-bar > ul
+  {
+    position: relative;
     list-style: none;
-}
+    padding: 10px 10px 10px 10px;
+  }
+  .side-bar > ul > li
+  {
+    padding: 3px 3px 3px 3px;
+    margin: 0;
+  }
+  .side-bar > ul > li >a
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+  .side-bar > ul > li > a:hover
+  {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .side-bar > ul > li > img
+  {
+    margin: 2px;
+    padding:0;
+  }
+  .units
+  {
+    font-family: Rubik;
+    color:#666666;
+    font-weight: 100;
+    text-align: center;
 
-.conatainer {
-  margin: 60px auto;
-  width: 70%;
-}
+    font-size: .8em;
+    line-height: 190%
+  }
+  .js,.ht,.css,.ai,.ae,.ps
+  {
+    padding:0;
+    margin:4px;
+
+  }
+  .tool-icons
+  {
+    margin:50px auto 30px auto;
+    padding:5px;
+    height: 150px;
+  }
+  .section__list--contact img
+  {
+    vertical-align: bottom;
+  }
+  /*//////////        end of CV             ///////////*/
+
+  /*//////////        DESIGN                ////////*/
+  .design-body
+  {
+    margin: 0;
+    padding:0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 140px);
+  }
+  .poster-block
+  {
+    /*position: static;*/
+    padding: 0;
+    margin: 0;
+    background-color: magenta;
+    width: 600px;
+    height:500px;
+    display: block;
+  }
+  .poster-right
+  {
+    padding: 0;
+    margin: 0;
+    height:500px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+  .poster-desc
+  {
+    padding: 5px;
+    margin: 5px;
+    background-color: blue;
+    font-family: Rubik;
+    font-weight: 200;
+    font-size: 1em;
+    display: inline-block;
+    width: 200px;
+  }
+  /*//////////        end of DESIGN         /////////*/
